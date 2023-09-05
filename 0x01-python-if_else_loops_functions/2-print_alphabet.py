@@ -1,8 +1,6 @@
 #!/usr/bin/python3
+# 2-print_alphabet.py
 
-# Loop to print the alphabet
-for char_code in range(97, 123):  # ASCII values for 'a' to 'z'
-    print(chr(char_code), end='')
-
-# Print a newline character at the end
-print()
+"""Print the alphabet in lowercase, not followed by a new line."""
+for letter in range(97, 123):
+    print("{}".format(chr(letter)), end="")

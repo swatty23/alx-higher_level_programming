@@ -1,13 +1,13 @@
 #!/usr/bin/python3
+# 6-print_comb3.py
 
-# Loop to iterate through the first digit (0 to 9)
-for first_digit in range(10):
-    # Loop to iterate through the second digit (0 to 9)
-    for second_digit in range(first_digit + 1, 10):
-        if first_digit < 9:
-            print("{:d}{:d}, ".format(first_digit, second_digit), end="")
+"""Print all possible different combinations of two digits in ascending order.
+
+    The two digits must be different - 01 and 10 are considered identical.
+    """
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
         else:
-            print("{:d}{:d}".format(first_digit, second_digit))
-
-# Print a newline character at the end
-print()
+            print("{}{}".format(digit1, digit2), end=", ")
