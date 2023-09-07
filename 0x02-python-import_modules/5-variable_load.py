@@ -1,6 +1,5 @@
 #!/usr/bin/python3
+from variable_load_5 import a
 
-a = 98
-"""Simple variable
-"""
-
+if __name__ == "__main__":
+    print(a)

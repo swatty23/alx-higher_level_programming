@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-# Define the add function directly in your script
 def add(a, b):
     """My addition function
 
@@ -13,12 +11,42 @@ def add(a, b):
     """
     return (a + b)
 
-# Assign values to a and b
-a = 1
-b = 2
 
-# Calculate the result using the add function
-result = add(a, b)
+def sub(a, b):
+    """My subtraction function
 
-# Print the result
-print("{} + {} = {}".format(a, b, result))
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a - b
+    """
+    return (a - b)
+
+
+def mul(a, b):
+    """My multiplication function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a * b
+    """
+    return (a * b)
+
+
+def div(a, b):
+    """My division function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a / b
+    """
+    return int(a / b)
+
